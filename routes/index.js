@@ -10,4 +10,8 @@ router.get('/graph', function(req, res){
   res.render('graph', { title: 'Graph'});
 });
 
+router.get('/rpidata', function(req, res){
+  res.render('rpidata', { title: 'Example Data'});
+});
+
 module.exports = router;
