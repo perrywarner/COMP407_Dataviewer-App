@@ -5,9 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var graphRouter = require('./routes/graph');
-var rpidataRouter = require('./routes/rpidata');
+// var usersRouter = require('./routes/users');
+// var graphRouter = require('./routes/graph');
+// var rpidataRouter = require('./routes/rpidata');
 
 var app = express();
 
