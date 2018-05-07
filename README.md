@@ -19,13 +19,11 @@ git clone https://github.com/perrywarner/COMP407_Dataviewer-App.git
 cd COMP407_Dataviewer-App
 ```
 
-- Now, build the project by running: 
+- Now, we want to build and run the project on your local machine. When you do, you can open in your web browser at localhost:3000. To cancel the local server, you can exit it by the command ctrl-c. To execute the build manager and server, run the following command: 
 
 ```
 npm start
 ```
-
-- This will build and run the project on your local machine. You can view it by following localhost:3000 in a web browser.
 
 - To make your own changes to COMP407_Dataviewer-App, you have the following options:
 
