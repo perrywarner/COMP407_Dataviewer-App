@@ -9,7 +9,7 @@
 
 - Clone this repository by opening [Git Bash](https://git-scm.com/downloads), [cd aka change directory](https://ss64.com/bash/cd.html) to where you want to put the project, and type the following command: 
 
-```
+```bash
 git clone https://github.com/perrywarner/COMP407_Dataviewer-App.git
 ```
 
@@ -19,9 +19,17 @@ git clone https://github.com/perrywarner/COMP407_Dataviewer-App.git
 cd COMP407_Dataviewer-App
 ```
 
-- Now, we want to build and run the project on your local machine. When you do, you can open in your web browser at localhost:3000. To cancel the local server, you can exit it by the command ctrl-c. To execute the build manager and server, run the following command: 
+- Optional: If you would like to view the latest changes and see them live, you must [checkout](https://git-scm.com/docs/git-checkout) the dev branch. You can do so by the following commands:
 
+```bash
+git checkout dev
+git pull
 ```
+
+- Now, we want to build and run the project on your local machine. When you do, you can open in your web browser at localhost:3000. To cancel the local server, you can exit it by the command ctrl-c. To execute the build manager and server, run the following commands: 
+
+```bash
+npm install
 npm start
 ```
 
