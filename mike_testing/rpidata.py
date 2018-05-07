@@ -6,7 +6,7 @@ def rpi():
 	s.listen(5)
 	c=s.accept()
 
-	datfile=open("/var/www/html/weather/rpidata.txt","a")
+	datfile=open("/var/www/html/weather/Dataview_Project/mike_testing/rpidata.txt","a")
 
 	print("client is connected")
 
