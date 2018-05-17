@@ -14,4 +14,8 @@ router.get('/rpidata', function(req, res){
   res.render('rpidata', { title: 'Example Data'});
 });
 
+router.get('/dynamic_graph_ex_AJAX', function(req, res){
+  res.render('dynamic_graph_ex_AJAX', { title: 'Example dynamic graph'});
+});
+
 module.exports = router;
