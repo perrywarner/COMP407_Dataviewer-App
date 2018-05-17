@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/graph', function(req, res){
-  res.render('graph', { title: 'Graph'});
+router.get('/temperature', function(req, res){
+  res.render('temperature', { title: 'Temperature in Fahrenheit'});
 });
 
 router.get('/rpidata', function(req, res){
