@@ -1,14 +1,15 @@
+// Import external libraries
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// Use the Express routing engine
 var indexRouter = require('./routes/index');
-// var usersRouter = require('./routes/users');
-// var graphRouter = require('./routes/graph');
 // var rpidataRouter = require('./routes/rpidata');
 
+// Initialize our Express app
 var app = express();
 
 // view engine setup
@@ -22,8 +23,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-// app.use('/users', usersRouter);
-// app.use('/graph', graphRouter);
 // app.use('/rpidata', rpidataRouter);
 
 // catch 404 and forward to error handler
