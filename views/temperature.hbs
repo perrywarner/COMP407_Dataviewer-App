@@ -1,31 +1,30 @@
 <script type="text/javascript">
-
-window.onload = function () {
-	var chart = new CanvasJS.Chart("chartContainer", {
-		title:{
-			text: "Temperature in Fahrenheit; May 7, 2018"              
-		},
-      	axisX: {
-        	title: "Time"
-        },
-      	axisY: {
-        	title: "Degrees in Fahrenheit",
-        	suffix: "°F"
-      	},
-		data: [              
-		{
-			type: "spline",
-			dataPoints: [
-                { label: "11:08:13 AM",  y: 69.70  },
-				{ label: "11:08:16 AM", y: 69.70  },
-				{ label: "11:08:18 AM", y: 69.66  },
-				{ label: "11:08:21 AM",  y: 69.66  },
-				{ label: "11:08:23 AM",  y: 69.66  }
+	window.onload = function () {
+		var chart = new CanvasJS.Chart("chartContainer", {
+			title: {
+				text: "Temperature in Fahrenheit; May 7, 2018"
+			},
+			axisX: {
+				title: "Time"
+			},
+			axisY: {
+				title: "Degrees in Fahrenheit",
+				suffix: "°F"
+			},
+			data: [
+				{
+					type: "spline",
+					dataPoints: [
+						{ label: "11:08:13 AM", y: 69.70 },
+						{ label: "11:08:16 AM", y: 69.70 },
+						{ label: "11:08:18 AM", y: 69.66 },
+						{ label: "11:08:21 AM", y: 69.66 },
+						{ label: "11:08:23 AM", y: 69.66 }
+					]
+				}
 			]
-		}
-		]
-	});
-}
+		});
+	}
+</script>
 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-
