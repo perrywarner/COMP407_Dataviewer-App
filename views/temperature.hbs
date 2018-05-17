@@ -1,3 +1,4 @@
+<p>it loaded..</p>
 <script type="text/javascript">
 	window.onload = function () {
 		var chart = new CanvasJS.Chart("chartContainer", {
@@ -24,6 +25,12 @@
 				}
 			]
 		});
+
+		var my_textfile_parser = function () {
+            // build out your function for parsing the text file into the CanvasJS chart's {data: datapoints[]} list
+            
+        }
+        chart.render();
 	}
 </script>
 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
