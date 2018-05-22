@@ -20,7 +20,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'))); // For serving any static files, see https://expressjs.com/en/starter/static-files.html
 
 app.use('/', indexRouter);
 // app.use('/rpidata', rpidataRouter);
