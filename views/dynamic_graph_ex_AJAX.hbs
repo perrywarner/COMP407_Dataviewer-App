@@ -1,5 +1,7 @@
 <script type="text/javascript">
 	window.onload = function () {
+
+		// Initialize CanvasJS chart with some data points
 		var dataPoints = [{ y: 10 }, { y: 13 }, { y: 18 }, { y: 20 }, { y: 17 }];
 		var chart = new CanvasJS.Chart("chartContainer", {
 			title: {
@@ -13,6 +15,19 @@
 		});
 
 		chart.render();
+
+
+		// This function is my prototype for being able to dynamically update the CanvasJS chart.
+		function loadDoc() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("demo").innerHTML = this.responseText;
+				}
+			};
+			xhttp.open("GET", "demo_get.asp?t=" + Math.random(), true);
+			xhttp.send();
+		}
 
 		var yVal = 15, updateCount = 0;
 		var updateChart = function () {
@@ -33,6 +48,6 @@
 		setInterval(function () { updateChart() }, 1000);
 	}	
 </script>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-{{!-- <script src= "/js/dynamic_graph_example.js"></script> --}}
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> {{!--
+<script src="/js/dynamic_graph_example.js"></script> --}}
 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
